@@ -96,9 +96,9 @@ public class Backgammon {
         for (int i = 0; i < this.board.length; i++)
         {
             if (this.board[i] <= 0 && eaten[0] == 0)//The loop goes all over the board and checks for white players.
-                countW++;//If there are no white players she counts the place.
+                countW++;//If there are no white players it counts the place.
             if (this.board[i] >= 0 && eaten[1] == 0)////The loop goes all over the board and checks for black players.
-                countB++;////If there are no black players she counts the place.
+                countB++;////If there are no black players it counts the place.
         }//If in all places there are no white players or in all places there are no blacks
         // (including the place of the eaten) then the game is over.
         return countW == this.board.length || countB == this.board.length;
